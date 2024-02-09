@@ -30,9 +30,9 @@ def parse_date(user_string):
     parsed_month = parse_month(list[0])
 
     if int(list[1]) < 10:
-        print(f'{parsed_month}/0{list[1]}/{list[2]}')
+        return f'{parsed_month}/0{list[1]}/{list[2]}'
 
-    else: print(f'{parsed_month}/{list[1]}/{list[2]}')
+    else: return f'{parsed_month}/{list[1]}/{list[2]}'
     
 
 #REMOVE PASS AND YOUR CODE GOES HERE
